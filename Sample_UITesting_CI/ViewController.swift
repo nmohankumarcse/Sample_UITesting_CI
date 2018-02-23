@@ -39,7 +39,10 @@ class ViewController: UIViewController {
   
   override func viewDidLoad() {
     super.viewDidLoad()
-    
+    let str : String = "testing"
+    if let st :String = str{
+        print(st)
+    }
     let defaultGameStyle = defaults.integer(forKey: "gameStyle")
     print(defaultGameStyle)
     if gameStyleRange.contains(defaultGameStyle) {
@@ -107,7 +110,6 @@ class ViewController: UIViewController {
       self.updateView()
     })
     alert.addAction(action)
-    
     present(alert, animated: true, completion: nil)
   }
   
