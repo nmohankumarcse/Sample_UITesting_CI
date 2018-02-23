@@ -31,6 +31,26 @@ class Sample_UITesting_CIUITests: XCTestCase {
     func testExample() {
         // Use recording to get started writing UI tests.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
+        
+        let app = XCUIApplication()
+        app.buttons["Type"].tap()
+        let hitMeButton = app.buttons["hit me!"]
+        hitMeButton.tap()
+        app.alerts["Not A Number"].buttons["OK"].tap()
+        
+        let textField = app.textFields["1-100"]
+        textField.tap()
+        textField.typeText("2")
+        hitMeButton.tap()
+        //        app.alerts["you scored 3 points"].buttons["OK"].tap()
+        app/*@START_MENU_TOKEN@*/.buttons["Slide"]/*[[".segmentedControls.buttons[\"Slide\"]",".buttons[\"Slide\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
+        app.sliders["49%"].swipeRight()
+        hitMeButton.tap()
+        //        app.alerts["you scored 82 points"].buttons["OK"].tap()
+        
+        
+        //        app.alerts["you scored 99 points"].buttons["OK"].tap()
+        
     }
     
 }
