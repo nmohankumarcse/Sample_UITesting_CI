@@ -33,7 +33,6 @@ class Sample_UITesting_CIUITests: XCTestCase {
         // Use XCTAssert and related functions to verify your tests produce the correct results.
         
         let app = XCUIApplication()
-        app.buttons["Typeas"].tap()
         app.buttons["Type"].tap()
         let hitMeButton = app.buttons["hit me!"]
         hitMeButton.tap()
