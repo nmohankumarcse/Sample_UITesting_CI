@@ -112,6 +112,7 @@ class ViewController: UIViewController {
   }
   
   func showNaNAlert() {
+    print("showNaNAlert")
     let alert = UIAlertController(title: "Not A Number",
                                   message: "Please enter a positive number",
                                   preferredStyle: .alert)
