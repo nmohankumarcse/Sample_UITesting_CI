@@ -123,6 +123,7 @@ class ViewController: UIViewController {
   
   @IBAction func startOver(_ sender: Any) {
     game.startNewGame()
+    print("startOver")
     updateView()
   }
 
