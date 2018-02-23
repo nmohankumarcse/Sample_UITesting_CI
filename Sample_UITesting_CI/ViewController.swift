@@ -112,6 +112,7 @@ class ViewController: UIViewController {
   }
   
   func showNaNAlert() {
+    print("showNaNAlert")
     let alert = UIAlertController(title: "Not A Number",
                                   message: "Please enter a positive number",
                                   preferredStyle: .alert)
@@ -122,6 +123,7 @@ class ViewController: UIViewController {
   
   @IBAction func startOver(_ sender: Any) {
     game.startNewGame()
+    print("startOver")
     updateView()
   }
 
